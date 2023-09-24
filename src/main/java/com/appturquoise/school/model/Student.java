@@ -1,4 +1,4 @@
-package com.appturquoise.school.model.Student;
+package com.appturquoise.school.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -10,8 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "user_green")
-
+@Table(name = "student_turquoise")
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

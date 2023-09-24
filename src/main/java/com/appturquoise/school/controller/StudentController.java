@@ -1,6 +1,6 @@
 package com.appturquoise.school.controller;
 
-import com.appturquoise.school.model.Student.Student;
+import com.appturquoise.school.model.Student;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
