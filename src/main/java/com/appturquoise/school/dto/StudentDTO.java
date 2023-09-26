@@ -10,6 +10,9 @@ import lombok.Setter;
 @AllArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class StudentDTO {
+
+    public StudentDTO(){}
+
     private Long id;
     private String firsName;
     private String lastName;
