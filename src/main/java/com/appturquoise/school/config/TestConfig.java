@@ -1,6 +1,6 @@
 package com.appturquoise.school.config;
 
-import com.appturquoise.school.model.Student;
+import com.appturquoise.school.entity.Student;
 import com.appturquoise.school.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;

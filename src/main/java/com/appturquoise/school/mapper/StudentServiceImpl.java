@@ -1,7 +1,7 @@
-package com.appturquoise.school.service.impl;
+package com.appturquoise.school.mapper;
 
 import com.appturquoise.school.dto.StudentDTO;
-import com.appturquoise.school.model.Student;
+import com.appturquoise.school.entity.Student;
 import com.appturquoise.school.repository.StudentRepository;
 import com.appturquoise.school.service.StudentService;
 import lombok.AllArgsConstructor;
@@ -29,5 +29,14 @@ public class StudentServiceImpl implements StudentService {
     public StudentDTO getStudentById(Long id) {
         Student student = studentRepository.findById(id).get();
         return modelMapper.map(student,StudentDTO.class);
+    }
+
+    @Override
+    public StudentDTO createStudent (StudentDTO studentDTO){
+        Student student = modelMapper.map(studentDTO, Student.class);
+        Student saveStudent = studentRepository.save(student);
+        //StudentDTO saveStudentDTO = modelMapper.map(saveStudent, StudentDTO.class);
+
+        return modelMapper.map(saveStudent, StudentDTO.class);
     }
 }

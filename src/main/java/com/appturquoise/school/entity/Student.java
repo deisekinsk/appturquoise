@@ -1,4 +1,4 @@
-package com.appturquoise.school.model;
+package com.appturquoise.school.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
